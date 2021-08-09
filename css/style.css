@@ -227,9 +227,9 @@ h6 {
   line-height: 114.28571%;
   color: #DCD7C0;
   padding-bottom: 10px;
-  -webkit-transition: color .3s;
-  -o-transition: color .3s;
-  transition: color .3s;
+  -webkit-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .header__link:hover {
@@ -260,6 +260,151 @@ h6 {
   color: #fff;
 }
 
+.footer__top {
+  background: #191919;
+  padding-bottom: 45px;
+}
+
+.footer__top-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__top-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__col {
+  margin-right: 80px;
+}
+
+.footer__top-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.footer__title {
+  font-size: 15px;
+  line-height: 120%;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer__text {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 166.66667%;
+  color: #e1dece;
+  display: block;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s;
+}
+
+.footer a.footer__text:hover {
+  color: #fff;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -7px;
+}
+
+.footer__list li {
+  margin: 0 7px;
+}
+
+.footer__link {
+  display: inline-block;
+  width: 30px;
+  height: 32px;
+  background: #E1DECE;
+  -webkit-transition: background .3s;
+  -o-transition: background .3s;
+  transition: background .3s;
+}
+
+.footer__link.pinterest {
+  -webkit-mask-image: url(../img/icons/pinterest.png);
+          mask-image: url(../img/icons/pinterest.png);
+}
+
+.footer__link.instagram {
+  -webkit-mask-image: url(../img/icons/instagram.png);
+          mask-image: url(../img/icons/instagram.png);
+}
+
+.footer__link.vk {
+  -webkit-mask-image: url(../img/icons/vk.png);
+          mask-image: url(../img/icons/vk.png);
+}
+
+.footer__link.facebook {
+  -webkit-mask-image: url(../img/icons/facebook.png);
+          mask-image: url(../img/icons/facebook.png);
+}
+
+.footer__link:hover {
+  background: #fff;
+}
+
+.footer__top-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 571px;
+          flex: 0 1 571px;
+}
+
+.footer__bottom {
+  background: #1f1f1f;
+  padding: 45px 0;
+}
+
+.footer__bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__bottom-item {
+  font-size: 15px;
+  line-height: 166.66667%;
+  color: #e1dece;
+}
+
+.footer__bottom-item a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.footer__bottom-item a:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -267,6 +412,27 @@ h6 {
 
   .header__list li:not(:last-child) {
     margin-right: 30px;
+  }
+
+  .footer__top-row {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__top-left {
+    margin-bottom: 45px;
+  }
+
+  .footer__top-right {
+    width: 100%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
 }
 
@@ -410,5 +576,37 @@ h6 {
   .header__phone {
     display: inline-block;
     margin-top: 75px;
+  }
+
+  .footer__top-left {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__col {
+    margin-right: 0;
+  }
+
+  .footer__top-item {
+    margin-bottom: 30px;
+  }
+
+  .footer__top-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .footer__bottom-row {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer__bottom-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
