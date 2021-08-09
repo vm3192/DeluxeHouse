@@ -488,10 +488,10 @@ h6 {
 }
 
 .banner__text::before {
-  content: '';
+  content: "";
   width: 75px;
   height: 1px;
-  background: #E1DECE;
+  background: #e1dece;
   border-radius: 5px;
   position: absolute;
   left: -100px;
@@ -543,6 +543,25 @@ h6 {
 
 .banner__link:hover {
   background: #fff;
+}
+
+.banner__inscription {
+  position: absolute;
+  padding-top: 18%;
+  width: 31%;
+  right: 0px;
+  bottom: -11%;
+  background: url(../img/INTERIOR_DESIGN.png) 0 0/contain no-repeat;
+}
+
+@media (min-width: 1170px) {
+  .banner__title {
+    font-size: 50px;
+  }
+
+  .banner__subtitle {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -770,6 +789,10 @@ h6 {
 
   .banner__list li {
     margin: 0 7px;
+  }
+
+  .banner__inscription {
+    display: none;
   }
 }
 
