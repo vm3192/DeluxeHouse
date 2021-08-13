@@ -1239,6 +1239,75 @@ h6 {
   color: #c4c4c4;
 }
 
+.studia {
+  background: url(../img/studia_bg.png) 0 0/100% 100% no-repeat;
+  margin-top: -445px;
+  margin-bottom: -115px;
+  padding: 685px 0 530px;
+}
+
+.studia__title {
+  font-family: Garamond;
+  font-size: 40px;
+  line-height: 150%;
+  color: #191919;
+  max-width: 620px;
+  margin-left: auto;
+  margin-bottom: 130px;
+}
+
+.studia__title span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.studia__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -10px;
+}
+
+.studia__col {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 370px;
+          flex: 0 1 370px;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.studia__item-title {
+  font-family: Garamond;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: #101010;
+  margin-bottom: 40px;
+  min-height: 72px;
+}
+
+.studia__item-text {
+  font-size: 14px;
+  line-height: 171.42857%;
+  color: #101010;
+}
+
+.studia__item-text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media (min-width: 1170px) {
   .banner__title {
     font-size: 50px;
@@ -1301,6 +1370,10 @@ h6 {
 
   .weare__descr {
     margin-bottom: 80px;
+  }
+
+  .studia {
+    background: url(../img/studia_bg.png) 0 0/1440px 100% no-repeat;
   }
 }
 
@@ -1414,6 +1487,32 @@ h6 {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
+  }
+
+  .studia {
+    background: url(../img/studia_bg.png) 0 0/2440px 100% no-repeat;
+    padding: 785px 0 330px;
+  }
+
+  .studia__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .studia__col {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .studia__item {
+    margin-bottom: 40px;
+  }
+
+  .studia__item-title {
+    min-height: auto;
   }
 
   body.lock {
@@ -1677,6 +1776,17 @@ h6 {
   }
 
   .advantages__title {
+    font-size: 30px;
+  }
+
+  .studia {
+    background: url(../img/studia_bg.png) 0 0/2440px 100% no-repeat;
+    margin-top: -645px;
+    margin-bottom: -115px;
+    padding: 1070px 0 330px;
+  }
+
+  .studia__title {
     font-size: 30px;
   }
 }
